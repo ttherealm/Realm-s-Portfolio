@@ -1,0 +1,199 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    position: relative;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.message{
+    position: relative;
+}
+.message > input{
+    border-radius: 29px;
+    border: 3px solid #6c05f2;
+    color: #6c05f2;
+}
+.message > a{text-decoration: none;
+    color: #000;
+    position: absolute;
+    top: 8px;
+    right: 100px;
+    width: 90px;
+    height: 40px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.dev-info{
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.dev-info>h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.dev-info>p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 20px;
+    margin: auto;
+}
+.dev-info>input{
+    margin: 10px;
+    width: 140px;
+    height: 50px;
+    background-color: #6c05f2;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 29px;
+    border: none;
+}
+.dev-info>img{
+    padding: 30px;
+}
+.dev-info>input:hover{
+        width: 160px;
+        height: 50px;
+        background-color: transparent;
+        border: 4px solid #6c05f2;
+        color: #6c05f2;
+}
+.here{
+    color: #000;
+}
+#About{
+    background-color: #7310ee;
+    color: #fff;
+    text-align: center;
+   padding-bottom: 100px;
+}
+
+.about>h2{ padding-top: 70px;
+    padding-bottom: 20px;
+         font-size: 1.5rem;
+        font-weight: 700;
+}
+
+.about>p{
+    font-size: 1.1rem;
+        padding: 20px 50px;
+        margin: auto;
+}
+
+#Services{
+    padding:50px 150px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.material-symbols-outlined{
+    font-size: 4rem;
+        color: #6c05f2;
+        padding: 20px;
+}
+.card-body>h2{
+    font-size: 1.1rem;
+    color: #6c05f2;
+    padding: 20px;
+}
+.card-body>p{
+    font-size: 1rem;
+        padding: 10px;
+}
+
+.cta{position: relative;
+    background-color: #7310ee;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0 140px 0;
+}
+.cta>input{
+        margin: 15px;
+        width: 110px;
+        height: 50px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.1rem;
+        border-radius: 29px;
+        border:2px solid;
+}
+
+.project{ background-color: #151c3b;
+    border-radius: 20px;
+    margin:0 40px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    position: relative;
+    bottom: 80px;
+
+}
+.project-body{
+    width: 340px;
+    font-size: 1rem;
+}
+
+.project-cta>input{
+    
+        width: 190px;
+        height: 50px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.1rem;
+        border-radius: 29px;
+        border: 2px solid #5fe8bb;
+}
+.project-cta>input:hover{
+    background-color:#5fe8bb ;
+    color: #000;
+}
+                 /* SOCIAL MEDIA */
+
+#social-media{
+    padding: 50px 50px 0 50px;
+    text-align: center;
+}
+
+.socials>h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-top: 15px;
+}
+.socials>p{
+font-size: 1rem;
+    font-weight: 500;
+}
+.social-icons>.icons{
+        font-size: 1.5rem;
+        margin:0 5px;
+}
+
+
+
+.insta{
+    color:#fb3958;
+}
+.twitter{
+        
+    color:#00acee;
+}
+.facebook{
+    color: #3b5998;
+}
+
+/* FOOTER */
+
+footer{background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
