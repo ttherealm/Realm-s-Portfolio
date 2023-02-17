@@ -4,6 +4,8 @@
 body{
     position: relative;
 }
+
+/* NAV */
 nav{
     display:flex;
     justify-content: space-between;
@@ -28,6 +30,7 @@ nav{
     font-size: 0.9rem;
     text-align: center;
 }
+/* DEV-INFO */
 
 .dev-info{
     text-align: center;
@@ -67,6 +70,9 @@ nav{
 .here{
     color: #000;
 }
+
+/* ABOUT */
+
 #About{
     background-color: #7310ee;
     color: #fff;
@@ -85,6 +91,8 @@ nav{
         padding: 20px 50px;
         margin: auto;
 }
+
+/* SERVICES */
 
 #Services{
     padding:50px 150px;
@@ -108,6 +116,8 @@ nav{
         padding: 10px;
 }
 
+/* CTA */
+
 .cta{position: relative;
     background-color: #7310ee;
     text-align: center;
@@ -124,6 +134,8 @@ nav{
         border-radius: 29px;
         border:2px solid;
 }
+
+/* PROJECT */
 
 .project{ background-color: #151c3b;
     border-radius: 20px;
@@ -196,4 +208,144 @@ footer{background-color: #000;
     text-align: center;
     padding: 10px;
     font-size: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-device-height: 667px) and (min-device-width: 375px){
+   * {
+        margin: 0;
+        padding: 0;
+     }
+        /* NAV */
+
+                nav {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px 10px;
+
+                }
+        
+                
+
+        /* DEV-INFO */
+
+                .dev-info {
+                    margin: auto;
+                    text-align: center;
+                    padding: 0;
+                    margin-bottom: 20px;
+                }
+        
+                .dev-info>h1 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    width: 280px;
+                    margin: auto;
+                }
+        
+                .dev-info>p {
+                    font-size: 1rem;
+                    margin: auto;
+                }
+        
+                .dev-info>img {
+                    padding: 30px;
+                }
+
+         
+    
+         /* ABOUT */
+
+                 #About {
+                     padding-bottom: 20px;
+                 }
+        
+                 .about>h2 {
+                     padding: 20px 10px;
+                     font-size: 1.5rem;
+                     font-weight: 600;
+                 }
+        
+                 .about>p {
+                     font-size: 1rem;
+                     margin: auto;
+                     padding:0 20px 20px 20px;
+                 }
+
+          /* SERVICES */
+                  #Services {
+                     padding: 20px;
+                      text-align: center;
+                      margin: auto;
+                  }
+        
+        
+                  .material-symbols-outlined {
+                      font-size: 4rem;
+                      color: #6c05f2;
+                      padding: 20px;
+                  }
+        
+                  .card-body>h2 {
+                      font-size: 1.2rem;
+                      color: #6c05f2;
+                  }
+        
+                  .card-body>p {
+                      font-size: 1.1rem;
+                  }
+
+           /* CTA */
+                   .cta {
+                       position: relative;
+                       background-color: #7310ee;
+                       text-align: center;
+                       color: #fff;
+                       padding: 30px 0 80px 0;
+                   }
+        
+           /* PROJECT */
+                   .project {
+                       background-color: #151c3b;
+                       border-radius: 25px;
+                       margin: 0 10px;
+                      height: 150px;
+                       display: flex;
+                       justify-content: space-around;
+                       color: #fff;
+                       position: relative;
+                      
+                   }
+                   .pro-head>h3{
+                   
+                    
+                   }
+        
+                   .project-body {
+                       visibility: hidden;
+                   }
+        
+                   .project-cta>input {
+        
+                      
+                       background-color: transparent;
+                       color: #fff;
+                       font-size: 1.1rem;
+                       border-radius: 29px;
+                       border: 2px solid #5fe8bb;
+                   }
+        
+                   .project-cta>input:hover {
+                       background-color: #5fe8bb;
+                       color: #000;
+                   }
+
+
+        
+                  
+
+
+
+
 }
