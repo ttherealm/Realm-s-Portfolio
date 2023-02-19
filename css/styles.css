@@ -238,8 +238,8 @@ footer{
 
 /* MEDIA QUERIES */
 
-@media (max-device-height: 667px) and (max-device-width: 375px){
-   * {
+@media screen and (max-device-width: 640px){
+   *{
         margin: 0;
         padding: 0;
      }
@@ -349,11 +349,7 @@ footer{
                        position: relative;
                       
                    }
-                   .pro-head>h3{
                    
-                    
-                   }
-        
                    .project-body {
                        visibility: hidden;
                    }
@@ -372,23 +368,6 @@ footer{
                        background-color: #5fe8bb;
                        color: #000;
                    }
-
-             /* CONTACT */
-                          /* form>.input {
-                              margin-bottom: 20px;
-                              border: 2px solid #000;
-                              padding: 10px;
-                          }
-                          form>.textarea{
-
-                          }
-               */
-           
-
-          
-                  
-
-
 
 
 }
