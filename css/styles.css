@@ -1,6 +1,12 @@
-*{
-    margin: 0; padding: 0;
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+
 body{
     position: relative;
     padding-top: 100px;
@@ -10,11 +16,8 @@ body{
 nav{
     display:flex;
     justify-content: space-between;
-    padding: 20px 100px;
 }
-.logo>img{
-    
-}
+
 
 .message{
     position: relative;
@@ -194,40 +197,98 @@ nav{
 
 }
 
-.social-icons{
-    text-align: center;
-    padding: 30px;
-    display: flex;
+
+
+
+.wrapper {
+    display: inline-flex;
+    padding:40px 50px;
     
 }
 
-.social-icons>.icons{
-       background-color: #6c05f2;
-        font-size: 1.5rem;
-        margin: 10px;
-        border-radius: 25px;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        border: 2px solid #6d78a8;
+.wrapper .icon {
+    margin: 0 17px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.social-icons>.icons:hover{
-    background-color: #fff;
+.wrapper .icon a{
+    text-decoration: none;
 }
-.social-icons>.icons>.twitter{
-    color: #00acee;
-    margin: auto;
-}
-.social-icons>.icons>.insta{
-    color:#962fbf ;
-}
-.social-icons>.icons>.linkedin{
-    color: #0072b1;
-}
-.social-icons>.icons>.mail {
-    color: #c71610;
 
+.wrapper .icon  span {
+    display: block;
+    height: 80px;
+    width: 80px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.336);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+.wrapper .icon span i {
+    line-height: 80px;
+    font-size: 30px;
+    color: #000;
+    transition: 0.5s;
+}
+.wrapper .icon span i:hover {
+    color: #fff;
+}
+
+.icon:hover {
+    transform: translateY(-12px);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -70px;
+    opacity: 0;
+    pointer-events: auto;
+}
+.wrapper .icon:hover span {
+    color: #fff;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1.5px 0px rgba(0, 0, 0, 0.415);
+}
+
+.wrapper .facebook:hover span {
+    background: #3564c9;
+}
+
+.wrapper .twitter:hover span {
+    background: #0ba2e3;
+}
+.wrapper .instagram:hover span {
+    background: #e52766;
+}
+
+.wrapper .whatsapp:hover span {
+    background: #25ac3a;
+}
+
+.wrapper .github:hover span {
+    background: #333;
+}
+
+.wrapper .youtube:hover span {
+    background: #e02619;
+}
+
+
+
+
+
 
 /* FOOTER */
 
@@ -241,6 +302,7 @@ footer{
 
 /* MEDIA QUERIES */
 
+
 @media screen and (max-device-width: 680px){
    *{
         margin: 0;
@@ -253,6 +315,9 @@ footer{
                     justify-content: space-between;
                     padding: 20px 10px;
 
+                }
+                .message>a{
+                    visibility: hidden;
                 }
         
                 
@@ -294,12 +359,12 @@ footer{
                      padding: 20px 10px;
                      font-size: 1.5rem;
                      font-weight: 600;
-                 }
-        
+                 } 
+                 
                  .about>p {
                      font-size: 1rem;
                      margin: auto;
-                     padding:0 20px 20px 20px;
+                     padding:0 30px 20px 30px;
                  }
 
           /* SERVICES */
@@ -375,6 +440,24 @@ footer{
                    .contact>h3 {
                        font-size: 1.2rem;
                    }
+                   .wrapper {
+                    padding: 20px 0;
+                }
+                    
+                   .wrapper .icon span i {
+                    font-size: 35px;
+                   
+                }
+                .wrapper .icon span {
+                    width: 60px;
+                    
+                 }
+                .wrapper .icon {
+                    margin: 0 10px;
+
+               } 
+               
+              
 
 
 }
